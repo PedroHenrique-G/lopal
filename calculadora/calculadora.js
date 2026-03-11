@@ -34,10 +34,9 @@ function calculadora(){
         continua = prompt("Digite sim para continuar e não encerrar.");
         if( continua === "não"){
                 return
-        }
-        
+            }
     }
-    if( operador != "/" ||  operando2 != 0){
+    if( (operador != "/" ||  operando2 != 0) && operador_valido != false ){
         alert("Resultado: " + 
         operando1 + " " + operador + " " + operando2 + " = " + resultado);
     }
